@@ -40,7 +40,7 @@
 
 (defvar ha-mode-highlights
   '(("^\\(\\(\\sw\\|\\s_\\)+\\)\\>:" . font-lock-function-name-face)
-    ("r0\\|r1\\|r2\\|r3\\|r4\\|r5\\|r6\\|r7\\|r8\\|r9\\|r10\\|r11\\|r12\\|r13\\|r14\\|r15" . font-lock-variable-name-face)
+    ("r0\\|r2\\|r3\\|r4\\|r5\\|r6\\|r7\\|r8\\|r9\\|r10\\|r11\\|r12\\|r13\\|r14\\|r15\\|r1" . font-lock-variable-name-face)
     ("\\(if\\|go\\ to\\)" . font-lock-keyword-face)
     ))
 
