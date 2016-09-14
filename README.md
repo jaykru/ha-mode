@@ -1,2 +1,2 @@
 # ha-mode
-An emacs mode for editing Jim Fix's Ha language.
+An emacs (maybe Sublime Text 3 too) mode for editing Jim Fix's Ha language.

@@ -1,0 +1,28 @@
+%YAML 1.2
+---
+name: Ha
+file_extensions: [ha]
+scope: source.ha
+
+contexts:
+  main:
+    - include: controls
+    - include: registers
+    - include: labels
+    - include: comments
+
+  controls:
+    - match: \b(if|go to)\b
+    scope: keyword.control.ha
+
+  labels:
+    - match: ([\w\d]+)(:)
+    scope: entity.name.function
+
+  registers:
+    - match: \b(([0-9])|(1[0-5])|)\b
+    scope: storage.type.ha
+
+  comments:
+    - match: \#*
+    scope: comment.line.number-sign
