@@ -59,7 +59,7 @@
   "Indent current line of Ha code."
   (interactive)
   (save-excursion (beginning-of-line)
-		  (if (not (or (looking-at "\\(\\sw\\|\\s_\\)+:") (looking-at "\\#\\*")))
+		  (if (not (looking-at "\\(\\sw\\|\\s_\\)+:"))
 		      (indent-line-to 4))))
 
 (provide 'ha)
